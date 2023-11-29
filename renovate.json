@@ -11,6 +11,16 @@
         "patch"
       ],
       "automerge": true
-    }
+    },
+    {
+      "description": "Auto-merge GitHub-managed actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackagePrefixes": [
+        "actions/"
+      ],
+      "automerge": true
+    },
   ]
 }
