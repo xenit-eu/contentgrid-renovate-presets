@@ -21,6 +21,13 @@
         "actions/"
       ],
       "automerge": true
+    },
+    {
+      "description": "Group all spring package updates",
+      "groupName": "spring",
+      "matchPackageNames": [
+        "org.springframework.*:**"
+      ]
     }
   ]
 }
