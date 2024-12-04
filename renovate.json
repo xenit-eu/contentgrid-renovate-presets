@@ -27,7 +27,12 @@
       "groupName": "spring",
       "matchPackageNames": [
         "org.springframework.*:**"
-      ]
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
+      "automerge": false
     }
   ]
 }
