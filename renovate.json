@@ -41,7 +41,9 @@
       "matchManagers": [
         "npm"
       ],
-      "matchSourceUrl": "https://github.com/xenit-eu/contentgrid-ts"
+      "matchSourceUrls": [
+        "https://github.com/xenit-eu/contentgrid-ts"
+      ]
     }
   ]
 }
