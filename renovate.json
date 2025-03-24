@@ -34,6 +34,14 @@
       ],
       "separateMinorMajor": false,
       "automerge": false
+    },
+    {
+      "description": "Group all contentgrid npm package updates",
+      "groupName": "contentgrid-monorepo",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchSourceUrl": "https://github.com/xenit-eu/contentgrid-ts"
     }
   ]
 }
