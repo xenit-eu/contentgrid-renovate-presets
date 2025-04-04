@@ -42,7 +42,8 @@
         "npm"
       ],
       "matchSourceUrls": [
-        "https://github.com/xenit-eu/contentgrid-ts"
+        "https://github.com/xenit-eu/contentgrid-ts",
+        "https://github.com/xenit-eu/contentgrid-python-client"
       ]
     }
   ]
