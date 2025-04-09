@@ -62,7 +62,8 @@
         "gradle"
       ],
       "matchSourceUrls": [
-        "https://github.com/xenit-eu/helm-integration-testing"
+        "https://github.com/xenit-eu/helm-integration-testing",
+        "https://github.com/xenit-eu/contentgrid-spring"
       ]
     }
   ]
