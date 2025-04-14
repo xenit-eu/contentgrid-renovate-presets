@@ -36,8 +36,8 @@
       "automerge": false
     },
     {
-      "description": "Group all contentgrid npm package updates",
-      "groupName": "contentgrid-npm-monorepo",
+      "description": "Group all contentgrid-ts package updates",
+      "groupName": "contentgrid-ts-monorepo",
       "matchManagers": [
         "npm"
       ],
@@ -46,8 +46,8 @@
       ]
     },
     {
-      "description": "Group all contentgrid pip package updates",
-      "groupName": "contentgrid-pip-monorepo",
+      "description": "Group all contentgrid-python-client package updates",
+      "groupName": "contentgrid-python-client-monorepo",
       "matchManagers": [
         "pip_requirements"
       ],
@@ -56,13 +56,22 @@
       ]
     },
     {
-      "description": "Group all contentgrid gradle package updates",
-      "groupName": "contentgrid-gradle-monorepo",
+      "description": "Group all helm-integration-testing package updates",
+      "groupName": "helm-integration-testing-monorepo",
       "matchManagers": [
         "gradle"
       ],
       "matchSourceUrls": [
-        "https://github.com/xenit-eu/helm-integration-testing",
+        "https://github.com/xenit-eu/helm-integration-testing"
+      ]
+    },
+    {
+      "description": "Group all contentgrid-spring package updates",
+      "groupName": "contentgrid-spring-monorepo",
+      "matchManagers": [
+        "gradle"
+      ],
+      "matchSourceUrls": [
         "https://github.com/xenit-eu/contentgrid-spring"
       ]
     }
