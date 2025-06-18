@@ -74,6 +74,16 @@
       "matchSourceUrls": [
         "https://github.com/xenit-eu/contentgrid-spring"
       ]
+    },
+    {
+      "description": "Group all contentgrid-hateoas package updates",
+      "groupName": "contentgrid-hateoas-monorepo",
+      "matchManagers": [
+        "gradle"
+      ],
+      "matchSourceUrls": [
+        "https://github.com/xenit-eu/contentgrid-hateoas"
+      ]
     }
   ]
 }
