@@ -32,7 +32,7 @@
         "minor",
         "major"
       ],
-      "separateMinorMajor": false,
+      "separateMajorMinor": false,
       "automerge": false
     },
     {
