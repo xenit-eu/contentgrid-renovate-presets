@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "minimumReleaseAge": "14 days",
   "packageRules": [
     {
       "description": "Auto-merge minor/patch updates",
@@ -84,6 +85,13 @@
       "matchSourceUrls": [
         "https://github.com/xenit-eu/contentgrid-hateoas"
       ]
+    },
+    {
+      "description": "Immediately update when the dependency is from Xenit",
+      "matchSourceUrls": [
+        "https://github.com/xenit-eu/*"
+      ],
+      "minimumReleaseAge": "0 days"
     }
   ]
 }
