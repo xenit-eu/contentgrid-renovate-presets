@@ -92,6 +92,14 @@
         "https://github.com/xenit-eu/*"
       ],
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "Immediately update when the docker image is from Xenit",
+      "matchPackageNames": [
+        "docker.xenit.eu/*",
+        "ghcr.io/xenit-eu/*"
+      ],
+      "minimumReleaseAge": "0 days"
     }
   ]
 }
