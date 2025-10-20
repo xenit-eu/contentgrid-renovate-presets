@@ -4,6 +4,7 @@
     "config:base"
   ],
   "minimumReleaseAge": "14 days",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
   "packageRules": [
     {
       "description": "Auto-merge minor/patch updates",
