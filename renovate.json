@@ -58,6 +58,16 @@
       ]
     },
     {
+      "description": "Group all arize phoenix package updates",
+      "groupName": "phoenix-python-tracing",
+      "matchManagers": [
+        "pip_requirements"
+      ],
+      "matchPackagePrefixes": [
+        "arize-phoenix"
+      ]
+    },
+    {
       "description": "Group all helm-integration-testing package updates",
       "groupName": "helm-integration-testing-monorepo",
       "matchManagers": [
