@@ -88,6 +88,16 @@
       ]
     },
     {
+      "description": "Group all contentgrid-appserver package updates",
+      "groupName": "contentgrid-appserver-monorepo",
+      "matchManagers": [
+        "gradle"
+      ],
+      "matchSourceUrls": [
+        "https://github.com/xenit-eu/contentgrid-appserver"
+      ]
+    },
+    {
       "description": "Group all contentgrid-hateoas package updates",
       "groupName": "contentgrid-hateoas-monorepo",
       "matchManagers": [
