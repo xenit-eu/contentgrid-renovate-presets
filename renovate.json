@@ -5,6 +5,8 @@
   ],
   "minimumReleaseAge": "14 days",
   "minimumReleaseAgeBehaviour": "timestamp-required",
+  "internalChecksFilter": "strict",
+  "postUpdateOptions": ["pnpmDedupe"],
   "packageRules": [
     {
       "description": "Auto-merge minor/patch updates",
