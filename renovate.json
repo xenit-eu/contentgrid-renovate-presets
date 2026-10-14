@@ -8,6 +8,24 @@
   "minimumReleaseAgeBehaviour": "timestamp-required",
   "packageRules": [
     {
+      "description": "Use the Cloudsmith proxy for dependencies whose only configured registry is Maven Central",
+      "matchDatasources": [
+        "maven"
+      ],
+      "matchRegistryUrls": [
+        "https://repo.maven.apache.org/maven2",
+        "https://repo.maven.apache.org/maven2/",
+        "https://repo1.maven.org/maven2",
+        "https://repo1.maven.org/maven2/"
+      ],
+      "matchJsonata": [
+        "$count($distinct(registryUrls)) = 1"
+      ],
+      "registryUrls": [
+        "https://dl.cloudsmith.io/basic/xenit/maven-central-proxy/maven/"
+      ]
+    },
+    {
       "description": "Auto-merge minor/patch updates",
       "matchUpdateTypes": [
         "minor",
