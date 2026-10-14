@@ -26,6 +26,13 @@
       "automerge": true
     },
     {
+      "description": "Do not separate major and minor spring package updates",
+      "matchPackageNames": [
+        "org.springframework.*:**"
+      ],
+      "separateMajorMinor": false
+    },
+    {
       "description": "Group all spring package updates",
       "groupName": "spring",
       "matchPackageNames": [
@@ -35,7 +42,6 @@
         "minor",
         "major"
       ],
-      "separateMajorMinor": false,
       "automerge": false
     },
     {
