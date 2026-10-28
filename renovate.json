@@ -146,6 +146,13 @@
         "ghcr.io/xenit-eu/*"
       ],
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "Immediately update the Xenit enterprise-conventions Gradle plugins (For the missing scmUrl and other metadata, see https://github.com/gradle/plugin-portal-requests/issues/212)",
+      "matchPackageNames": [
+        "eu.xenit.enterprise-conventions.**"
+      ],
+      "minimumReleaseAge": "0 days"
     }
   ]
 }
