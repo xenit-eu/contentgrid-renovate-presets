@@ -133,9 +133,23 @@
       ]
     },
     {
+      "description": "Group all enterprise-conventions Gradle plugin updates (matched by name because the plugin portal lacks scmUrl metadata, see https://github.com/gradle/plugin-portal-requests/issues/212)",
+      "groupName": "enterprise-conventions-monorepo",
+      "matchPackageNames": [
+        "eu.xenit.enterprise-conventions.**"
+      ]
+    },
+    {
       "description": "Immediately update when the dependency is from Xenit",
       "matchSourceUrls": [
         "https://github.com/xenit-eu/*"
+      ],
+      "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "Immediately update when the dependency is from Xenit",
+      "matchPackageNames": [
+        "eu.xenit.**"
       ],
       "minimumReleaseAge": "0 days"
     },
@@ -144,13 +158,6 @@
       "matchPackageNames": [
         "docker.xenit.eu/**",
         "ghcr.io/xenit-eu/*"
-      ],
-      "minimumReleaseAge": "0 days"
-    },
-    {
-      "description": "Immediately update the Xenit enterprise-conventions Gradle plugins (For the missing scmUrl and other metadata, see https://github.com/gradle/plugin-portal-requests/issues/212)",
-      "matchPackageNames": [
-        "eu.xenit.enterprise-conventions.**"
       ],
       "minimumReleaseAge": "0 days"
     }
