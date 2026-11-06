@@ -26,6 +26,18 @@
       ]
     },
     {
+      "description": "Use the Cloudsmith proxy for maven dependencies without any configured registry (e.g. regex custom managers without registryUrlTemplate), which would otherwise default to Maven Central",
+      "matchDatasources": [
+        "maven"
+      ],
+      "matchJsonata": [
+        "$count(registryUrls) = 0"
+      ],
+      "registryUrls": [
+        "https://dl.cloudsmith.io/basic/xenit/maven-central-proxy/maven/"
+      ]
+    },
+    {
       "description": "Auto-merge minor/patch updates",
       "matchUpdateTypes": [
         "minor",
