@@ -6,7 +6,26 @@
   ],
   "minimumReleaseAge": "14 days",
   "minimumReleaseAgeBehaviour": "timestamp-required",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Keycloak chart: keep the existing tag and digest in separate fields",
+      "managerFilePatterns": ["/(^|/)values\\.ya?ml$/"],
+      "matchStrings": [
+        "repository: quay\\.io/keycloak/keycloak\\r?\\n    tag: (?<currentValue>[\\w.-]+)\\r?\\n    digest: (?<currentDigest>sha256:[a-f0-9]{64})"
+      ],
+      "depNameTemplate": "quay.io/keycloak/keycloak",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ],
   "packageRules": [
+    {
+      "description": "Let the custom manager handle Keycloak Helm image updates",
+      "matchManagers": ["helm-values"],
+      "matchPackageNames": ["quay.io/keycloak/keycloak"],
+      "enabled": false
+    },
     {
       "description": "Use the Cloudsmith proxy for dependencies whose only configured registry is Maven Central",
       "matchDatasources": [
