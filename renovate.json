@@ -75,6 +75,14 @@
       "automerge": true
     },
     {
+      "description": "Group Python version updates (docker image, .python-version and actions/setup-python python-version) and propose patch updates separately from minor updates",
+      "groupName": "python",
+      "matchDepNames": [
+        "python"
+      ],
+      "separateMinorPatch": true
+    },
+    {
       "description": "Do not separate major and minor spring package updates",
       "matchPackageNames": [
         "org.springframework.*:**"
